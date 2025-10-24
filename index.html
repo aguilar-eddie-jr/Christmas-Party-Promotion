@@ -10,73 +10,126 @@
     <style>
         body {
             background: radial-gradient(circle, #006039 40%, #003d26 100%);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            width: 70%;
-            height: 70%;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
             margin: 20px auto;
+            width: 70%;
             border: 100px solid #D4AF37;
             border-image: url(./bgsnow.svg) 50%;
+            color: white;
             padding: 0;
         }
 
-        header {
-            text-align: center;
+        p, a, h2 {
             margin: 0;
-            color: white;
-            font-family: "Edu NSW ACT Cursive", cursive;
-            border-bottom: 5px dashed #D4AF37;
-        }
-
-        header img {
-            width: 250px;
-            margin: 20px auto 0 auto;
-        }
-
-        header h1 {
-            font-size: 50px;
-            margin: 0;
-        }
-        header p {
-            font-size: 30px;
-            margin: 0;
-        }
-
-        .contrastheader {
-            color: #ff0000;
         }
 
         p {
-            font-size: 20px;
-            margin: 0;
+            font-size: 24px;
         }
+
         a {
-            font-weight: bolder;
-            color: #d43737;
+            font-weight: bold;
+            color: #ff2800;
             text-decoration: none;
             font-size: 24px;
         }
 
-        h2 {
-            font-size: 40px;
-            margin: 0;
+        header {
+            text-align: center;
+            font-family: "Edu NSW ACT Cursive", cursive;
+            border-bottom: 5px dashed #D4AF37;
+            padding-bottom: 20px;
+        }
+
+        header img {
+            width: 250px;
+            margin-top: 20px;
+        }
+
+        header h1 {
+            font-size: 50px;
+        }
+
+        header p {
+            font-size: 30px;
+        }
+
+        .contrastheader {
+            color: #ff2800;
         }
 
         main {
             text-align: center;
-            color: white;
             margin-top: 50px;
-        }
-        .numbersimage {
-            text-align: center;
-            margin-bottom: 50px;
         }
 
         .eventdetails {
-            margin-bottom: 50px;
-            border-bottom: 5px dashed #D4AF37;
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Montserrat', sans-serif;
         }
-        .eventp {
-            margin-bottom: 40px;
+
+        .date-banner {
+            width: 95%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            border-top: 4px solid #D4AF37;
+            border-bottom: 4px solid #D4AF37;
+        }
+
+        .week, .month {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #F8F8D0;
+        }
+
+        .date-number {
+            font-size: 100px;
+            font-weight: 900;
+            color: #ECD672;
+        }
+
+        .event-text {
+            margin-top: 25px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .event-text .sub {
+            font-size: 18px;
+            font-weight: 800;
+            margin: 5px 0;
+        }
+
+        .address {
+            margin-top: 18px;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .time {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ECD672;
+        }
+
+        .numbersimage {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0;
+        }
+
+        .numbersimage img {
+            width: 45%;
+            max-width: 350px;
         }
 
         .Contact {
@@ -84,47 +137,55 @@
             margin-top: 50px;
             padding-top: 20px;
         }
+
+        .contactinfo p {
+            margin: 5px;
+            display: inline-block;
+        }
     </style>
 </head>
 
 <body>
-    <header>
-        <div>
+    <main>
+        <header>
             <img src="./XmasLogo.svg" alt="Logo">
             <p>11-NUMBERS</p>
             <h1>
-                <span class="contrastheader">Ch</span>ri 
+                <span class="contrastheader">Ch</span>ri
                 <span class="contrastheader">st</span>mas
                 <span class="contrastheader">Pa</span>rt
                 <span class="contrastheader">ty</span>
             </h1>
             <p>(SY.2025-2026)</p>
-        </div>
-    </header>
+        </header>
 
-    <main>
         <section class="eventdetails">
-            <div class="eventp"><p>Join us with our</p> 
-                <h2>Christmas Party celebration filled with joy, laughter, and holiday cheer!</h2>
+            <div class="date-banner">
+                <span class="week">SUNDAY</span>
+                <span class="date-number">25</span>
+                <span class="month">DECEMBER</span>
             </div>
-            <h2>Event Details</h2>
-            <p>Date: December 20, 2025</p>
-            <p>Time: 7:00 PM - 11:00 PM</p>
-            <p>Location: 123 Holiday Lane, </p>
+
+            <div class="event-text">
+                <p class="sub">Free:</p>
+                <p class="sub">FOOD AND DRINKS</p>
+                <p class="address">Unida Christian Colleges | Ramos Building | 4th Floor | Room 403</p>
+                <p class="time">Starts at 6:00 PM</p>
+            </div>
         </section>
-         <section class="numbersimage">
-            <img src="./Dear.svg" alt="Christmas Numbers" width="250px">
-            <img src="./numbers party_result.webp" alt="Christmas Numbers" width="500px">
+
+        <section class="numbersimage">
+            <img src="./Dear.svg" alt="Dear Invitation">
+            <img src="./numbers party_result.webp" alt="Christmas Party Image">
         </section>
 
         <section class="Contact">
-            <div>
             <h2>RSVP</h2>
-            </div>
-            <div>
             <p>And if you're interested!</p>
             <h2>Contact us</h2>
-            <p>Email:<a href="https://mail.google.com/mail/u/0/?fs=1&to=aguilareddie2323@gmail.com&tf=cm"> aguilareddie2323@gmail.com</a></p>
+            <div class="contactinfo">
+                <p>Email: <a href="mailto:aguilareddie2323@gmail.com">aguilareddie2323@gmail.com</a></p>
+                <p>Number: <a href="tel:+09947420066">0994-742-0066</a></p>
             </div>
         </section>
     </main>
