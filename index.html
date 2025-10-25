@@ -1,188 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Christmas Party Promotion">
-<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
-<title>Christmas Party Promotion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Christmas Party Promotion">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <title>Christmas Party Promotion</title>
 
-<style>
-body {
-    background: radial-gradient(circle, #006039 40%, #003d26 100%);
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin: 20px auto;
-    width: 70%;
-    border: 100px solid #D4AF37;
-    border-image: url(./fianlist.svg) 33% round;
-    color: white;
-    padding: 0;
-}
+    <style>
+        body {
+            background: radial-gradient(circle, #006039 40%, #003d26 100%);
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            margin: 20px auto;
+            width: 70%;
+            border: 100px solid #D4AF37;
+            border-image: url(./fianlist.svg) 33% round;
+            color: white;
+            padding: 0;
+        }
 
-p, a, h2 {
-    margin: 0;
-}
+        p, a, h2 { 
+            margin: 0; 
+        }
 
-p {
-    font-size: 24px;
-}
+        p { 
+            font-size: 24px; 
+        }
+        a {
+            font-size: 24px;
+            font-weight: bold;
+            color: #D40000;
+            text-decoration: none;
+        }
 
-a {
-    font-weight: bold;
-    color: #D40000;
-    text-decoration: none;
-    font-size: 24px;
-}
+        header {
+            text-align: center;
+            font-family: "Edu NSW ACT Cursive", cursive;
+            padding-bottom: 20px;
+        }
 
-header {
-    text-align: center;
-    font-family: "Edu NSW ACT Cursive", cursive;
-    padding-bottom: 20px;
-}
+        header img {
+            width: 250px;
+            margin-top: 20px;
+        }
 
-header img {
-    width: 250px;
-    margin-top: 20px;
-}
+        header h1 { 
+            font-size: 50px; 
+        }
+        header p { 
+            font-size: 30px; 
+        }
 
-header h1 {
-    font-size: 50px;
-}
+        .contrastheader { 
+            color: #D40000; 
+        }
 
-header p {
-    font-size: 30px;
-}
+        main {
+            text-align: center;
+            margin-top: 50px;
+        }
 
-.contrastheader {
-    color: #D40000;
-}
+        .eventdetails {
+            margin-top: 50px;
+            font-family: 'Montserrat', sans-serif;
+        }
 
-main {
-    text-align: center;
-    margin-top: 50px;
-}
-footer {
-    text-align: center;
-    color: white;
-    margin-top: 40px;
-    padding: 15px 0;
-    border-top: 3px solid #D4AF37;
-}
-footer h2 {
-    color: #D4AF37;
-    font-size: 35px;
-}
+        .date-banner {
+            width: 95%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            border-top: 4px solid #D4AF37;
+            border-bottom: 4px solid #D4AF37;
+            background: rgba(0, 0, 0, 0.07);
+            backdrop-filter: blur(3px);
+        }
 
-.eventdetails {
-    margin-top: 50px;
-    font-family: 'Montserrat', sans-serif;
-}
+        .week, .month {
+            font-size: 22px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #F8F8D0;
+        }
 
-.date-banner {
-    width: 95%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    border-top: 4px solid #D4AF37;
-    border-bottom: 4px solid #D4AF37;
-}
+        .date-number {
+            font-size: 95px;
+            font-weight: 900;
+            color: #ECD672;
+            text-shadow: 0px 0px 10px rgba(212,175,55,0.8);
+        }
 
-.week, .month {
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: #F8F8D0;
-}
+        article p {
+            font-size: 22px;
+            font-weight: 500;
+            max-width: 800px;
+            margin: 20px auto;
+        }
 
-.date-number {
-    font-size: 95px;
-    font-weight: 900;
-    color: #ECD672;
-}
+        .event-text .sub {
+            font-size: 18px;
+            font-weight: 800;
+            margin: 5px 0;
+            background-color: #D40000;
+        }
 
-article p {
-    font-size: 22px;
-    font-weight: 500;
-    max-width: 800px;
-    margin: 20px auto;
-}
+        .address {
+            margin-top: 18px;
+            font-size: 26px;
+            font-weight: 700;
+        }
 
-.event-text .sub {
-    font-size: 18px;
-    font-weight: 800;
-    margin: 5px 0;
-    background-color: #D40000;
-}
+        .time {
+            margin-top: 10px;
+            font-size: 24px;
+            font-weight: 700;
+            color: #ECD672;
+        }
 
-.address {
-    margin-top: 18px;
-    font-size: 26px;
-    font-weight: 700;
-}
+        .maindetails {
+            text-align: center;
+            margin-top: 30px;
+        }
 
-.time {
-    margin-top: 10px;
-    font-size: 24px;
-    font-weight: 700;
-    color: #ECD672;
-}
+        .schedule {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-size: 20px;
+            color: #FFFFFF;
+        }
 
-.maindetails {
-    text-align: center;
-    margin-top: 30px;
-}
+        .schedule th {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ECD672;
+            border-bottom: 3px solid #D4AF37;
+            padding: 10px;
+        }
 
-.schedule {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    font-size: 20px;
-    color: #FFFFFF;
-}
+        .schedule td {
+            padding: 12px 8px;
+            border-bottom: 1px solid #D4AF37;
+        }
 
-.schedule th {
-    font-size: 22px;
-    font-weight: 700;
-    color: #ECD672;
-    border-bottom: 3px solid #D4AF37;
-    padding: 10px;
-}
+        .numbersimage {
+            margin-top: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.schedule td {
-    padding: 12px 8px;
-    border-bottom: 1px solid #D4AF37;
-}
+        .numbersimage img {
+            width: 45%;
+            max-width: 350px;
+        }
 
-.numbersimage {
-    margin-top: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        footer {
+            text-align: center;
+            padding: 35px 0 25px 0;
+            margin-top: 50px;
+            border-top: 4px solid #D4AF37;
+        }
 
-.numbersimage img {
-    width: 45%;
-    max-width: 350px;
-}
+        footer h2 {
+            color: #D4AF37;
+            font-size: 45px;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            text-shadow: 0px 0px 10px rgba(212,175,55,0.8);
+        }
 
-footer {
-    border-top: 5px solid #D4AF37;
-    margin: 50px;
-    padding-top: 20px;
-}
+        footer h3 {
+            font-size: 28px;
+            color: #ECD672;
+            margin: 12px 0 15px;
+        }
 
-.contactinfo p {
-    margin: 5px;
-    display: inline-block;
-}
-</style>
+        footer p {
+            font-size: 22px;
+            margin: 6px 0;
+        }
+
+        footer a {
+            color: #D40000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contactinfo p {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 
 <body>
+
 <header>
     <img src="./XmasLogo.svg" alt="Logo">
     <p>11-NUMBERS</p>
@@ -196,6 +212,7 @@ footer {
 </header>
 
 <main>
+
     <section class="eventdetails">
 
         <article>
@@ -209,13 +226,14 @@ footer {
         </section>
 
         <section class="event-text">
-            <p class="sub">Unida Christian Colleges</p>
-            <p class="address">Ramos Building | 4th Floor | Room 403</p>
+            <p class="sub">&#128392; Unida Christian Colleges</p>
+            <address class="address">Ramos Building | 4th Floor | Room 403</address>
             <p class="time">Starts at 7:30 AM</p>
         </section>
 
         <section class="maindetails">
             <p class="sub">Special Events:</p>
+
             <table class="schedule">
                 <tr><th>Time</th><th>Activity</th></tr>
                 <tr><td>6:00 - 6:15 PM</td><td>Opening & Welcome Remarks</td></tr>
@@ -234,16 +252,25 @@ footer {
         <img src="./Dear.svg" alt="Dear Invitation">
         <img src="./numbers party_result.webp" alt="Christmas Party Image">
     </section>
+
 </main>
 
 <footer>
     <h2>RSVP</h2>
     <p>And if you're interested!</p>
-    <h2>Contact us</h2>
+    <h3>Contact us</h3>
+
     <div class="contactinfo">
-        <p>Email: <a href="mailto:aguilareddie2323@gmail.com">aguilareddie2323@gmail.com</a></p>
-        <p>Number: <a href="tel:+09947420066">0994-742-0066</a></p>
+        <p>Email: 
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=aguilareddie2323@gmail.com&tf=cm">
+                aguilareddie2323@gmail.com
+            </a>
+        </p>
+        <p>Number: 
+            <a href="tel:+09947420066">0994-742-0066</a>
+        </p>
     </div>
 </footer>
+
 </body>
 </html>
